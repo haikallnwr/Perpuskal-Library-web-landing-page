@@ -1,0 +1,596 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+* {
+  font-family: Poppins;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar-container {
+  display: flex;
+  background-color: #16325b;
+  padding: 1.6rem 0.4rem;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+.logo p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #ffffff;
+  padding-inline: 2rem;
+}
+
+.logo span {
+  color: #227b94;
+}
+
+.nav-list ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-list li {
+  list-style-type: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav-list a:hover {
+  color: #227b94;
+  transition: ease 0.3s;
+}
+
+.nav-btn {
+  display: flex;
+  padding-inline: 2rem;
+  gap: 0.7rem;
+}
+
+.nav-btn a {
+  text-decoration: none;
+}
+
+.btn-menu {
+  height: 2rem;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.nav-btn .btn-menu img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.btn-login {
+  border: #ffffff solid 1px;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 3px 15px;
+}
+
+.btn-signup {
+  background-color: #ffffff;
+  color: #16325b;
+  border-radius: 10px;
+  padding: 3px 15px;
+}
+
+.btn-signup:hover {
+  background-color: #227b94;
+  color: #ffffff;
+  transition: ease 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.btn-login:hover {
+  background-color: #227b94;
+  color: #ffffff;
+  transition: ease 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  border: #227b94 solid 1px;
+}
+
+/* Content */
+.selamat-datang {
+  padding: 2rem;
+  background-color: #16325b;
+}
+
+.selamat-datang h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.selamat-datang span {
+  font-style: italic;
+}
+
+.biru {
+  color: #227b94;
+}
+
+.selamat-datang p {
+  padding: 15px 0px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.cari-buku {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.cari-buku input {
+  border: #ffffff solid;
+  border-radius: 20px;
+  height: 40px;
+  width: 400px;
+  padding-left: 1rem;
+}
+
+.cari-buku button {
+  background-color: #16325b;
+  border: #ffffff solid;
+  height: 40px;
+  width: 60px;
+  border-radius: 20px;
+}
+
+.cari-buku button:hover {
+  background-color: rgb(34, 123, 148, 0.5);
+  border: rgb(34, 123, 148, 0.5) solid;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+button img {
+  width: 25px;
+  height: 25px;
+  margin-top: 4px;
+}
+
+.daftar-buku h2 {
+  text-align: left;
+  padding-left: 2rem;
+  margin-top: 1rem;
+}
+
+.card-container {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: scroll;
+  padding: 2rem;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border-radius: 15px;
+}
+
+.card img {
+  height: 230px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  margin-bottom: 5px;
+}
+
+.card h1 {
+  position: relative;
+  text-align: center;
+  text-transform: capitalize;
+  height: 40px;
+  padding: 0;
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+
+.card button {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #16325b;
+  color: #ffffff;
+  font-size: 12px;
+  align-items: end;
+}
+
+.card button:hover {
+  background-color: #227b94;
+  color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+.keunggulan {
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.text-1 {
+  margin-right: 2rem;
+}
+.text-1 h2 {
+  width: fit-content;
+  margin: 0;
+  padding-left: 0;
+}
+
+.foto-1 {
+  width: 500px;
+  border-top-right-radius: 70px;
+}
+
+.kegiatan {
+  margin-top: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.kegiatan-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.kegiatan-img {
+  width: 280px;
+  border-radius: 20px;
+}
+
+.quotes p {
+  border: #16325b solid;
+  padding: 2rem;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.quotes-container {
+  display: block;
+  text-align: center;
+  position: relative;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.tokoh {
+  text-align: center;
+  padding: 1rem;
+  top: -5px;
+  border-radius: 20px;
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  background-color: #16325b;
+}
+
+main {
+  display: flex;
+}
+
+#content {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 5.1rem;
+  width: 80%;
+}
+
+/* Aside */
+aside {
+  margin-top: 5.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 1rem;
+}
+
+.aside-header {
+  border: #16325b solid 1.3px;
+  border-radius: 15px;
+  background-color: rgb(34, 123, 148, 0.2);
+}
+
+.profile img {
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile img,
+h2,
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile h2 {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+table {
+  text-align: left;
+  width: 90%;
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+th,
+td {
+  padding-inline: 3px;
+}
+
+tr {
+  vertical-align: top;
+}
+
+.usul-buku {
+  background-color: rgb(34, 123, 148, 0.2);
+  border: #16325b solid 1.3px;
+  border-radius: 15px;
+  margin-top: 1rem;
+  font-size: 0.7rem;
+}
+
+.usul-buku p {
+  text-align: left;
+  padding: 0rem 1rem;
+}
+
+.usul-buku button {
+  background-color: #16325b;
+  padding: 5px 20px;
+  margin: 1rem 0rem;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 0.7rem;
+}
+
+.kontak h2 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.kontak button {
+  display: block;
+  align-items: center;
+  width: 12rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.4rem;
+  background-color: #16325b;
+  padding: 5px 25px;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+/* Footer */
+footer {
+  padding: 2rem;
+  color: white;
+  background-color: #16325b;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 75%;
+  }
+
+  main {
+    flex-flow: column nowrap;
+  }
+
+  #content {
+    width: 100%;
+  }
+
+  .foto-1 {
+    width: 350px;
+  }
+
+  .kegiatan-img {
+    width: 270px;
+  }
+
+  main aside {
+    align-self: center;
+  }
+
+  aside {
+    margin-top: 0;
+    box-shadow: none;
+  }
+
+  .kontak {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .kontak h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  .selamat-datang h1 {
+    font-size: 2rem;
+  }
+
+  .selamat-datang p {
+    font-size: 0.8rem;
+  }
+
+  aside {
+    margin-top: 0;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  #content {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .keunggulan {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kegiatan-container {
+    flex-direction: column;
+  }
+
+  .kegiatan p {
+    padding: 1rem 2rem;
+  }
+
+  .keunggulan {
+    margin-top: 2rem;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 0.3rem 2rem;
+    justify-content: center;
+  }
+
+  .foto-1 {
+    width: 300px;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .text-1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding: 1rem 2rem;
+  }
+
+  .text-1 h2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+
+  .quotes p {
+    width: 300px;
+  }
+
+  .btn-menu {
+    display: flex;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #ffffff;
+    width: 17rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .nav-list.active {
+    right: 0;
+    flex-direction: column;
+  }
+
+  .nav-list ul {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .nav-list a {
+    color: #16325b;
+    font-size: 1.3rem;
+  }
+
+  .cari-buku input {
+    border: #ffffff solid;
+    border-radius: 15px;
+    height: 30px;
+    width: 200px;
+    padding-left: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .cari-buku button {
+    background-color: #16325b;
+    border: #ffffff solid;
+    height: 30px;
+    width: 50px;
+    border-radius: 20px;
+  }
+
+  .cari-buku button:hover {
+    background-color: rgb(34, 123, 148, 0.5);
+    border: rgb(34, 123, 148, 0.5) solid;
+    cursor: pointer;
+    transition: ease 0.3s;
+  }
+
+  button img {
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+  }
+
+  .daftar-buku h2 {
+    text-align: left;
+    padding-left: 2rem;
+    margin-top: 1rem;
+  }
+
+  .kontak button {
+    font-size: 0.8rem;
+  }
+}
